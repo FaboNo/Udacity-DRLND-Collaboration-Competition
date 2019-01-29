@@ -56,10 +56,13 @@ where, however, some information is shared between the agents.
 
 In particular, each of the agents in this model has its own actor and critic model. The actors each receive as input the 
 individual state (observations) of the agent and output a (two-dimensional) action. 
-The crit`ic model of each actor, however, receives the states and actions of all actors concatenated.
+The critic model of each actor, however, receives the states and actions of all actors concatenated.
 
 Throughout training the agents all use a common experience replay buffer (a set of stored previous 1-step experiences) and draw independent samples.
 
-Details of the implementation including the neural nets to model actor and critic models can be found in the modules
-`MADDPG_agent.py` and `models.py` as well as the report (report.pdf`). With the current set of models and hyperparameters
+Details of the implementation including the neural nets to model actor and critic models can be found in the notebook as well as the report (report.pdf). 
+
+The MADDPG agent implemented in the notebook is able to solve the problem in 872 episodes - see pic below:
+![MADDPG_score](MADDPG_score.png?raw=true "MADDPG_score")
+With the current set of models and hyperparameters
 the environment can be solved in 872 Episodes.
