@@ -61,8 +61,8 @@ individual state (observations) of the agent and output a (two-dimensional) acti
 
 Throughout training the agents all use a common experience replay buffer (a set of stored previous 1-step experiences) and draw independent samples.
 
-Details of the implementation including the neural nets to model actor and critic models can be found in the notebook as well as the report (reportCollaborationCompetition.pdf). 
+Details of the implementation including the Actor and Critic neural nets, DDPG and MADDPG agents can be found in the notebook as well as the report (reportCollaborationCompetition.pdf). 
 
-The MADDPG agent implemented in the notebook is able to solve the problem in 872 episodes - see pic below:
+The MADDPG agent implemented in the notebook is able to solve the environment in 872 episodes - see pic below:
 ![MADDPG_score](MADDPG_score.png?raw=true "MADDPG_score")
 
